@@ -6,8 +6,8 @@
     duration: 1day
     trainer: shiva
   tasks:
-  - name: print course information
-    ansible.builtin.debug:
-    #vars reference should be surrounded by ""
-     msg: "hi {{ course }} time {{ duration }} trained by {{ trainer }}"
+   - name: print course information
+     ansible.builtin.debug:
+     #vars reference should be surrounded by ""
+       msg: "hi {{ course }} time {{ duration }} trained by {{ trainer }}"
 
