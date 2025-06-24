@@ -1,5 +1,5 @@
 - name: helloworld
-  host: local
+  hosts: local
   connection: local #no need of username and password
   tasks: 
   - name: print helloworld
