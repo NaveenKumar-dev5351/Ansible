@@ -1,6 +1,6 @@
 - name: loops
-  hosts: local
-  connection: local
+  hosts: frontend
+  become: yes
   tasks:
   - name: install packages
     ansible.builtin.package:
@@ -10,4 +10,3 @@
     - { name: 'nginx', state: 'present'}
     - { name: 'mysql', state: 'absent'}
     - { name: 'zip', state: 'absent'}
-    
