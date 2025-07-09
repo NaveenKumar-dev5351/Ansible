@@ -7,3 +7,5 @@
   - name: print names
     ansible.builtin.debug:
       msg: "Hello {{ persons | split(',') }}"
+
+
